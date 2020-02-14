@@ -1,0 +1,9 @@
+html body {
+	background-color: beige;
+}
+
+.centre {
+	padding-left: 100px;
+	max-width: 1000px;
+  	margin: auto;
+}
