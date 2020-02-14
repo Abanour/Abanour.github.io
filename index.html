@@ -1,51 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Mohamed Abanour's Portfolio</title>
-    <meta name="description" content="My Website">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Mohamed Abanour's Portfolio</title>
+        <meta name="description" content="My Website">
 
-    <meta name="description" content="Mohamed Abanour's portfolio">
-    <meta name="keywords" content="portfolio,Mohamed,Abanour, mohamed, abanour, web, developer">
-    <meta name="author" content="Mohamed Abanour">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Mohamed Abanour's portfolio">
+        <meta name="keywords" content="portfolio,Mohamed,Abanour, mohamed,
+            abanour, web, developer">
+        <meta name="author" content="Mohamed Abanour">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="StyleSheet/style.css">
+        <link rel="Javascript" href="javascript/js">
 
+        <!-- Bootstrap 4 Stylesheet, JQuery and Javascript -->
+        <link rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+            integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+            integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+            crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="style.css">
+    </head>
 
-    <!-- Bootstrap 4 Stylesheet, JQuery and Javascript -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-        crossorigin="anonymous"></script>
+    <body onload="startTime()">
 
-</head>
+        <div class="time">
 
-<body>
-    <div class="container">
-        <div class="centre">
-            <h1 class="index">
-                This website is a portfolio of my first year coursework
-            </h1>
+            <div class="container">
 
-            <hr>
+                <div class="row">
 
+                    <div class="col-sm-2 textTime">
+                        <p>Your local time: </p>
+                    </div>
 
-            
+                    <div class="col-sm-1">
+                        <b><div id="txt"> </div></b>
+                    </div>
 
+                </div>
 
-
+            </div>
         </div>
-    </div>
 
-</body>
 
+
+        <div class="container">
+            <div class="centre">
+                <hr>
+
+                <h1 class="index">
+                    Welcome to a website designed by me, Mohamed Abanour
+                </h1>
+
+                <hr>
+
+                <h5>
+                    This is a link to a website i have recently designed to
+                    showcase my skills
+                </h5>
+
+                <br>
+
+                <a href="Resource/SoloWebsite/index.html" target="_blank">Explore
+                    Central London</a>
+            </div>
+        </div>
+
+    </body>
+
+    <!-- Start of Footer -->
+    <Footer>
+        <div id="Footer">
+            <div id="footerContent">
+                <div class="p-2 bd-highlight">
+                    For enquires contact me through <a
+                        href="https://twitter.com/MohamedAbanour">Twitter</a> |
+                    2020 &#169;
+                </div>
+            </div>
+        </div>
+    </Footer>
+
+    <script>
+
+        function startTime() {
+            var today = new Date();
+            var h = today.getHours();
+            var m = today.getMinutes();
+            var s = today.getSeconds();
+            m = checkTime(m);
+            s = checkTime(s);
+            document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+            var t = setTimeout(startTime, 500);
+        }
+  
+        function checkTime(i) {
+   
+        if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+        return i;
+        }
+
+    </script>
 </html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Explore Central London</title>
+
+    <!-- Meta tags for the website -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Explore Central London">
+    <meta name="keywords" content="Explore Central London Guide Tour Tourist">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="refresh" content="600">
+
+    <!-- Favicon located in the tab -->
+    <link rel="icon" href="Media/icon/favIcon.png">
+
+    <!-- Bootstrap 4 Stylesheet, JQuery and Javascript -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+    <!-- Link to my own Stylesheet to overwrite some of the Bootstrap 4 styling and to have my own styling -->
+    <link rel="stylesheet" type="text/css" href="StyleSheet/style.css">
+
+</head>
+
+<body>
+
+    <!-- Carousel for the landing section of the homepage -->
+    <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-interval="6000">
+                <img src="Media/Slider/BuckinghamPalace.jpg" class="d-block w-100" alt="picture of buckingham palace">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Buckingham Palace</h1>
+                    <p>Explore Central London</p>
+
+                    <div class="box">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="carousel-item" data-interval="2000">
+                <img src="Media/Slider/ParliamentAndBigBen.jpg" class="d-block w-100" alt="picture of Parliament building and big ben from across the river thames">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Parliament building and Big Ben</h1>
+                    <p>Explore Central London</p>
+
+                    <div class="box">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Media/Slider/TheShard.jpg" class="d-block w-100" alt="picture of the shard, taken standing in london bridge station">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>The Shard</h1>
+                    <p>Explore Central London</p>
+
+                    <div class="box">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Media/Slider/TowerBridge.jpg" class="d-block w-100" alt="picture of tower bridge with the river thames in frame">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Tower Bridge</h1>
+                    <p>Explore Central London</p>
+
+                    <div class="box">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!-- Icons to show the user what screen size is being used -->
+    <div class="icons">
+        <div id="show-mobile">
+            <img src="Media/icon/phoneIcon.png" alt="Icon shows on a mobile screen size">
+            <p>Phone</p>
+        </div>
+
+        <div id="show-tablet">
+            <img src="Media/icon/tabletIcon.png" alt="Icon shows on a tablet screen size">
+            <p>Tablet</p>
+        </div>
+
+        <div id="show-desktop">
+            <img src="Media/icon/computerIcon.png" alt="Icon shows on a desktop or laptop screen size">
+            <p>Computer</p>
+        </div>
+    </div>
+
+
+    <!-- Navigation bar -->
+    <div class="homepage">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="museumsAndGallery.html">Museums and Galleries</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="events.html">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="landmarks.html">Landmarks</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="food-and-market.html">Food and Markets</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Intro paragraph of the webpage -->
+    <div class="container">
+        <h1 class="mt-5">Explore Central London</h1>
+
+        <p>
+            London is a vast piece of land filled with many wonders and secrets; however, sometimes the most wonderful
+            of things are
+            hidden in plain sight. We will explore some of the history of some of London's iconic trademarks and some
+            of the things
+            The Heart of London has to offer.
+        </p>
+
+        <p>
+            <b>This website only gives you a glimpse of what London has to offer... The rest is up to you for you to
+                explore.</b>
+        </p>
+
+        <hr>
+
+        <!-- Start of columns in the body tag -->
+        <div class="indexContent">
+            <div class="row">
+
+                <div class="d-flex justify-content-center">
+                    <div class="d-flex flex-row bd-highlight mb-3">
+                        <div class="p-2 bd-highlight">
+                            <h2> Events </h2>
+                            <img src="Media/Location/LondonEye/20190107_132628.jpg" class="img-fluid" alt="picture of London Eye from across The River Thames">
+                            <p>
+                                Events take place all over London but more so in the heart of London. No matter the
+                                time...
+                                something is always happening. Watch a video of London surrounded by colour on New
+                                Years Eve by
+                                <a href="events.html">Clicking here</a>
+                            </p>
+                        </div>
+
+                        <div class="verticalDivider"></div>
+
+                        <div class="p-2 bd-highlight">
+                            <h2> Museums and Galleries </h2>
+                            <img src="Media/Location/BritishMuseum/20190107_094044.jpg" class="img-fluid" alt="picture of the inside of British Museum">
+                            <p>
+                                London is filled with galleries which explore art, history, science and aquatic life.
+                                Most are free of charge so you can walk right in and have a look around. Visit the
+                                museum page
+                                to see the different museums and galleries available to visit by
+                                <a href="museumsAndGallery.html">Clicking here</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <!-- Columns for the second row in the body tag -->
+            <div class="row">
+
+                <div class="d-flex justify-content-center">
+                    <div class="d-flex flex-row bd-highlight mb-3">
+                        <div class="p-2 bd-highlight">
+                            <h2> Landmarks </h2>
+                            <img src="Media/Location/St.PaulsCathedral/20190107_112313.jpg" class="img-fluid" alt="picture of Saint Pauls Cathedral">
+                            <p>
+                                Many structures and building to visit in and around London. Big Ben, Buckingham Palace,
+                                The Shard
+                                and many more to visit in Central London; only for you to explore. Check some of the
+                                pictures in our
+                                landmarks page by
+                                <a href="landmarks.html">Clicking here</a>
+                            </p>
+                        </div>
+
+                        <div class="verticalDivider"></div>
+
+                        <div class="p-2 bd-highlight">
+                            <h2> Food and Markets </h2>
+                            <img src="Media/Location/BoroughMarket/20190107_115858.jpg" class="img-fluid" alt="picture of the inside of British Museum">
+                            <p>
+                                London is filled with galleries which explore art, history, science and aquatic life.
+                                Most are free of charge so you can walk right in and have a look around. Visit the
+                                museum page
+                                to see the different museums and galleries available to visit by
+                                <a href="food-and-market.html">Clicking here</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Scroll to top button -->
+    <div class="ScrollToTop">
+        <a id="btn" onclick="scrollWin()">&#8679;</a>
+    </div>
+
+    <!-- Start of Footer -->
+    <Footer>
+        <div id="homepageFooter">
+            <div id="footerContent">
+                <div class="p-2 bd-highlight">
+                    For enquires contact maban001@gold.ac.uk | 2018 &#169;
+                </div>
+            </div>
+        </div>
+    </Footer>
+
+    <script>
+        // Script for scroll button. Scrolls to the top of the page
+        function scrollWin() {
+            window.scrollTo(0, 0);
+        }
+    </script>
+</body>
+
+
+</html>

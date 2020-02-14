@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Explore Central London</title>
+
+    <!-- Meta tags for the website -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Explore Central London">
+    <meta name="keywords" content="Explore Central London Guide Tour Tourist">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="refresh" content="600">
+
+    <!-- Favicon located in the tab -->
+    <link rel="icon" href="Media/icon/favIcon.png">
+
+    <!-- Bootstrap 4 Stylesheet, JQuery and Javascript -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+    <!-- Link to my own Stylesheet to overwrite some of the Bootstrap 4 styling and to have my own styling -->
+    <link rel="stylesheet" type="text/css" href="StyleSheet/style.css">
+
+</head>
+
+<body>
+
+    <!-- Logo heading for the specific webpage -->
+    <div id="food-and-marketContent">
+        <br>
+        <a href="index.html"><img id="theImage" src="Media/FoodAndMarketImage.png" alt="logo" class="logo"></a>
+    </div>
+
+    <!-- Carousel for the landing section of the homepage -->
+    <div class="icons">
+        <div id="show-mobile">
+            <img src="Media/icon/phoneIcon.png" alt="Icon shows on a mobile screen size">
+            <p>Phone</p>
+        </div>
+
+        <div id="show-tablet">
+            <img src="Media/icon/tabletIcon.png" alt="Icon shows on a tablet screen size">
+            <p>Tablet</p>
+        </div>
+
+        <div id="show-desktop">
+            <img src="Media/icon/computerIcon.png" alt="Icon shows on a desktop or laptop screen size">
+            <p>Computer</p>
+        </div>
+    </div>
+
+    <!-- Navigation bar -->
+    <div class="food-and-market">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="museumsAndGallery.html">Museums and Galleries</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="events.html">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="landmarks.html">Landmarks</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="food-and-market.html">Food and Markets
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Intro paragraph of the webpage -->
+    <div class="container">
+        <h1 class="mt-5">Explore Central London's Food and Market</h1>
+        <p>
+            Central London is home to many types of food from all across the world and also served in different ways.
+            you will find your traditional restaurant style serving but if you want to experience living in London then
+            there are many markets for you to try out all across central London and London itself. Here are a couple places you
+            could visit and remember to explore to find more.
+        </p>
+
+        <hr>
+
+        <div class="d-flex justify-content-center">
+            <div class="album text-muted">
+                <div class="container">
+                    <div class="row">
+                        <div class="card">
+                            <!-- Slideshow for Borough Market -->
+                            <h2>Borough Market</h2>
+                            <div class="w3-content w3-section">
+                                <img class="mySlides" src="Media/Location/BoroughMarket/20190107_115858.jpg" alt="Picture of Borough Market">
+                                <img class="mySlides" src="Media/Location/BoroughMarket/20190107_115844.jpg" alt="Picture of Borough Market">
+                                <img class="mySlides" src="Media/Location/BoroughMarket/20190107_115823.jpg" alt="Picture of Borough Market">
+                            </div>
+                            <p class="card-text">
+                                Borough Market is a wonderful food market hidden near London Bridge station
+                                not easy to find... It took me 10 minutes of wondering around to find this
+                                hidden gem. Once found, all the time it took to find the market will be forgotten.<span
+                                    id="dots">...</span><span id="more">
+                                    The wonderful smell of food can be smelled as soon as you go down some steep steps
+                                    from London Bridge Station.
+                                    The market is full of different food from sausage rolls, falafel wraps and sweet
+                                    and savoury food and way more.
+                                </span></p>
+
+                            <!-- Read more button for the user to read the full caption of the picture -->
+                            <div class="readMore">
+                                <a onclick="myFunction()" id="myClickable">Read more</a>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="card">
+                            <!-- Chinatowen gate image. Not in slideshow format -->
+                            <h2>Chinatown gate</h2>
+                            <div class="w3-content w3-section">
+                                <img src="Media/Location/ChinaTownGate/20190107_095500.jpg" alt="Picture of Chinatown gate">
+                            </div>
+                            <p class="card-text">
+                                Chinatown is composed of 3 long street. Each featuring a beautifully crafter
+                                gate which is enough for tourists to stop and take pictures but that is not all it
+                                holds<span id="dots1">...</span><span id="more1">
+                                    The town is full of food ranging from sweet to main meals and restaurant built in a
+                                    Chinese theme as though you were
+                                    in China experiencing the food and culture side by side.
+                                </span></p>
+
+                            <!-- Read more button for the user to read the full caption of the picture -->
+                            <div class="readMore">
+                                <a onclick="myFunction1()" id="myClickable1">Read more</a>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="card">
+                            <!-- Slideshow for Smithfield Market -->
+                            <h2>Smithfield Market</h2>
+                            <div class="w3-content w3-section">
+                                <img class="mySlides2" src="Media/Location/SmithfieldMarket/20190107_103601.jpg" alt="Picture of Smithfield Market">
+                                <img class="mySlides2" src="Media/Location/SmithfieldMarket/20190107_103525.jpg" alt="Picture of Smithfield Market">
+                                <img class="mySlides2" src="Media/Location/SmithfieldMarket/20190107_103521.jpg" alt="Picture of Smithfield Market">
+                            </div>
+                            <p class="card-text">
+                                This market is well hidden and out of site from anyone walking by <span id="dots2">...</span><span
+                                    id="more2">
+                                    . They need customers... People like you to go there and buy good quality meat.</span></p>
+
+                            <!-- Read more button for the user to read the full caption of the picture -->
+                            <div class="readMore">
+                                <a onclick="myFunction2()" id="myClickable2">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Scroll to top button -->
+    <div class="ScrollToTop">
+        <a id="btn" onclick="scrollWin()">&#8679;</a>
+    </div>
+
+    <!-- Start of Footer -->
+    <Footer>
+        <div id="food-and-marketFooter">
+            <div id="footerContent">
+                <div class="p-2 bd-highlight">
+                    For enquires contact maban001@gold.ac.uk | 2018 &#169;
+                </div>
+            </div>
+        </div>
+    </Footer>
+
+
+
+    <script>
+
+        // Script for scroll button. Scrolls to the top of the page
+        function scrollWin() {
+            window.scrollTo(0, 0);
+        }
+
+        // Read more function for Borough market
+        function myFunction() {
+
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var clickableText = document.getElementById("myClickable");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                clickableText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                clickableText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+
+        // Read more function for Chinatown gate
+        function myFunction1() {
+
+            var dots = document.getElementById("dots1");
+            var moreText = document.getElementById("more1");
+            var clickableText = document.getElementById("myClickable1");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                clickableText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                clickableText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+
+        // Read more function for Smithfield market
+        function myFunction2() {
+
+            var dots = document.getElementById("dots2");
+            var moreText = document.getElementById("more2");
+            var clickableText = document.getElementById("myClickable2");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                clickableText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                clickableText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+
+        // Carousel for Borough market picture slide
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 4000); // Change image every 2 seconds
+        }
+
+        // Carousel for Smithfield market picture slide
+        var myIndex2 = 0;
+        carousel2();
+
+        function carousel2() {
+            var i;
+            var x = document.getElementsByClassName("mySlides2");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex2++;
+            if (myIndex2 > x.length) { myIndex2 = 1 }
+            x[myIndex2 - 1].style.display = "block";
+            setTimeout(carousel2, 4000); // Change image every 2 seconds
+        }
+
+    </script>
+
+</body>
+
+</html>

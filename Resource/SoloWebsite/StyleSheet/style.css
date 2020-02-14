@@ -1,0 +1,350 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/* Vertical divider is a left border of the element */
+.verticalDivider {
+  border-left:1px solid #000;
+  height: auto;
+}
+
+/* Caorusel-item basic styling */
+.carousel-item {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-item h1 {
+  color: white;
+  vertical-align: middle;
+  font-size: 50px;
+}
+
+.carousel-item p {
+  color: white;
+  vertical-align: middle;
+  font-size: 19px;
+  padding-bottom: 25%;
+}
+
+/* Styling and animation of the scroll down arrow */
+.box {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+  /* Animates borders at an angle of 45 degree and animates them moving down */
+.box span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  border-width: 4px;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}
+
+  /* Slight delay between the first and second sets of border */
+.box span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+
+  /* Slight delay between the second and third sets of border */
+.box span:nth-child(3) {
+  animation-delay: -0.4s;
+}
+
+  /* Keyframe used to animate the different stages of the border and opacity level to give it a fade-in and fade-out effect */
+@keyframes animate {
+  0% { opacity: 0; transform: rotate(45deg) translate(-20px, -20px);}
+  50% { opacity: 1;}
+  100% { opacity: 0; transform: rotate(45deg) translate(20px, 20px);}
+}
+
+/* Styling for icons on the top right of the screen */
+.icons {
+  position: fixed;
+
+  background-color: hsl(60, 22%, 85%);
+  padding: 10px 17px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  opacity: 0.5;
+
+  top: 1%;
+  left: 90%;
+}
+
+.icons img {
+  margin: 0;
+  padding: 0px 0px 4px 0px;
+  height: 50px;
+  width: 50px;
+}
+
+/* Laptop or desktop screen size */
+@media screen and (max-width: 2000px) {
+  #show-desktop {
+    display: block;
+  }
+
+  #show-mobile {
+    display: none;
+  }
+
+  #show-tablet {
+    display: none;
+  }
+
+  .img-fluid {
+    min-width: 70%;
+  }
+  
+  body {
+    background-color: hsl(60, 19%, 85%);
+    color: black;
+  }
+}
+
+/* Tablet screen size */
+@media screen and (max-width: 992px) {
+  #show-desktop {
+    display: none;
+  }
+
+  #show-mobile {
+    display: none;
+  }
+
+  #show-tablet {
+    display: block;
+  }
+
+  .img-fluid {
+    min-width: 30%;
+  }
+
+  body {
+    background-color: hsl(60, 19%, 85%);
+    color: black;
+  }
+}
+
+/* Phone screen size */
+@media screen and (max-width: 450px) {
+  #show-desktop {
+    display: none;
+  }
+
+  #show-mobile {
+    display: block;
+  }
+
+  #show-tablet {
+    display: none;
+  }
+
+  .img-fluid {
+    min-width: 70%;
+  }
+
+  body {
+    background-color: hsl(60, 20%, 95%);
+    color: black;
+  }
+}
+
+/* image styling in the index webpage */
+.indexContent img {
+  height: 200px;
+  width: 400px;
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+}
+
+/* Scroll up button styling */
+.scrollToTop, #btn {
+
+  position: fixed;
+
+  background-color: hsl(0, 0%, 85%);
+  border: none;
+  color: hsl(60, 20%, 40%);
+  padding: 10px 17px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  opacity: 0.7;
+  border: 1px solid black;
+
+  top: 90%;
+  left: 90%;
+
+  cursor: pointer;
+}
+
+/* scroll  behaviour used to make the scroll movement smoother and not snap up to the top of the webpage */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Image heading styling for Landmarks, Events, Food and Markets and Museums and Galleries */
+img, #theImage {
+  width: 100%;
+  height: 100%;
+}
+
+/* styling for the slides to not display all the images all at once */
+.mySlides {
+  display:none;
+  width: 100%;
+}
+.mySlides2 {
+  display: none;
+  width: 100%;
+}
+
+/* Item img styling for the carousel */
+.item img {
+  height: 200px; 
+  width: 200px;
+}
+
+/* HOMEPAGE NAVIGATION BAR */
+.homepage {
+  width: 100%;
+  margin: 0 0 0 0;
+  overflow: hidden;
+  background-color:hsl(280, 94%, 80%);
+}
+
+#homepageContent {
+  background-color: hsl(280, 94%, 80%);
+}
+
+#homepageFooter {
+  width:100%;
+  margin: 0 0 0 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: hsl(280, 94%, 80%);
+}
+
+/* EVENTS NAVIGATION BAR */
+.events {
+  width: 100%;
+  margin: 0 0 0 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:hsl(63, 94%, 80%);
+}
+
+#eventsContent {
+  background-color: hsl(63, 94%, 80%);
+}
+
+#eventsFooter {
+  width:100%;
+  margin: 0 0 0 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: hsl(63, 94%, 80%);
+}
+
+/* MUSEUMS NAVIGATION BAR */
+.museums {
+  width: 100%;
+  margin: 0 0 0 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:hsl(234, 94%, 95%);
+}
+
+#museumsContent {
+  background-color: hsl(234, 94%, 95%);
+}
+
+#museumsFooter {
+  width:100%;
+  margin: 0 0 0 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: hsl(234, 94%, 95%);
+}
+
+/* FOOD AND MARKET NAVIGATION BAR */
+.food-and-market {
+  width: 100%;
+  margin: 0 0 0 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:hsl(122, 94%, 80%);
+}
+
+#food-and-marketContent {
+  background-color: hsl(122, 94%, 80%);
+}
+
+#food-and-marketFooter {
+  width:100%;
+  margin: 0 0 0 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: hsl(122, 94%, 80%);
+}
+
+/* LANDMARKS NAVIGATION BAR */
+.landmarks {
+  width: 100%;
+  margin: 0 0 0 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:hsl(359, 94%, 80%);
+}
+
+#landmarksContent {
+  background-color: hsl(359, 94%, 80%);
+}
+
+#landmarksFooter {
+  width:100%;
+  margin: 0 0 0 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: hsl(359, 94%, 80%);
+}
+
+/* Centering the text in the navigation bar */
+.nav-item {
+  padding-right: 100px;
+}
+
+/* hiding the extra characters after the "Read more" link on the land marks webpage */
+#more {display: none;}
+
+#more1 {display: none;}
+
+#more2 {display: none;}
+
+/* Cursor changed to click cursor to notify the visitor that it is a clickable link */
+.readMore {
+  cursor: pointer;
+  color: blue;
+}
+
+/* Styling to change the cards background colour on the Food and Markets webpage */
+.card {
+  background-color: hsl(0, 0%, 85%);
+}
