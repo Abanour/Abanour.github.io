@@ -44,7 +44,7 @@
 
             <!-- Loading File SECTION -->
             <tr>
-                <td>Copy and Paste or Select a File to Load:</td><br>
+                <td>Copy and Paste or Select a File to Load: (.txt files only) </td><br>
                 <td><input type="file" id="loadFile"></td> <br>
                 <td><button onclick="fileToTextarea()">Load Selected File</button>
                     <td>
@@ -52,13 +52,16 @@
 
             <br>
 
-            <textarea id="txtHold" name="txtHold" class="wt-resize" rows="13" cols="100"></textarea>
+            <textarea id="txtHold" name="txtHold" class="no-resize" rows="13" cols="100"></textarea>
+
+            <h7>Word Count</h7>
+            <textarea id="wordCount" name="wordCount" class="no-resize" rows="1" cols="10"></textarea>
 
             <!-- Summarisation SECTION -->
 
             <h3>Output</h3>
 
-            <textarea id="txtDisplay" name="txtHold" class="wt-resize" rows="13" cols="100" readonly></textarea>
+            <textarea id="txtDisplay" name="txtHold" class="no-resize" rows="13" cols="100" readonly></textarea>
 
         </div>
     </div>

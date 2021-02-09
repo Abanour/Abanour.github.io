@@ -11,6 +11,9 @@ function fileToTextarea() {
     fileReader.onload = function(fileLoadedEvent) {
         var textFromFileLoaded = fileLoadedEvent.target.result;
         document.getElementById("txtHold").value = textFromFileLoaded;
+
+        var res = textFromFileLoaded.split(" ");
+        $("#wordCount").text(res.length);
     };
 
     // This specifies to read the .txt file as text and nothing else
