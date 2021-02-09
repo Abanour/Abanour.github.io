@@ -1,0 +1,18 @@
+// This function loads and reads the file chosen by the user
+function fileToTextarea() {
+    // Variable holds the name of the file which has been loaded
+    var loadFile = document.getElementById("loadFile").files[0];
+
+    // The file is then read
+    var fileReader = new FileReader();
+
+    // This part of the code outputs the text in the file to txtHold which
+    // is the textarea which will display the content of the file
+    fileReader.onload = function(fileLoadedEvent) {
+        var textFromFileLoaded = fileLoadedEvent.target.result;
+        document.getElementById("txtHold").value = textFromFileLoaded;
+    };
+
+    // This specifies to read the .txt file as text and nothing else
+    fileReader.readAsText(loadFile, "UTF-8");
+}

@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+
+    <!-- META data for search engines to find and index the website correctly -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Mohamed Abanour's Portfolio</title>
@@ -9,7 +11,7 @@
 
     <meta name="description" content="Mohamed Abanour's portfolio">
     <meta name="keywords" content="portfolio,Mohamed,Abanour, mohamed,
-            abanour, web, developer">
+            abanour, web, developer, summarisation tool, word concactination">
     <meta name="author" content="Mohamed Abanour">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="StyleSheet/style.css">
@@ -20,23 +22,39 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="js/javascript"></script>
 
 </head>
+
+<!-- Main body of code where all the features live -->
 
 <body>
 
     <div class="container">
         <div class="centre">
 
-            <h1>It is time for people to change for the better of the world.</h1>
+            <!-- Introduction to the website or tool -->
+            <h1>Summarisation Tool</h1>
 
             <hr>
 
-            <h5>Any contributions can be made here to this goal:</h5>
+            <h5>This tool only works with characters or texts. No other form of media should be included</h5>
 
             <br>
 
+            <!-- Loading File SECTION -->
+            <tr>
+                <td>Copy and Paste or Select a File to Load:</td><br>
+                <td><input type="file" id="loadFile"></td> <br>
+                <td><button onclick="fileToTextarea()">Load Selected File</button>
+                    <td>
+            </tr>
 
+            <br>
+
+            <textarea id="txtHold" name="txtHold" rows="13" cols="100"></textarea>
+
+            <!-- Summarisation SECTION -->
 
         </div>
     </div>
