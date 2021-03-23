@@ -28,56 +28,66 @@
 
 <!-- Main body of code where all the features live -->
 
-<body>
+<div class="mainBody">
 
-    <div class="container">
-        <div class="centre">
+    <body>
+        <div class="container h-100">
+            <div class="centre">
 
-            <!-- Introduction to the website or tool -->
-            <h1>Summarisation Tool</h1>
+                <!-- Introduction to the website or tool -->
+                <div class="centreText">Summarisation Tool</div>
 
-            <hr>
+                <div class="fieldOne">
 
-            <h5>This tool only works with characters or texts. No other form of media should be included</h5>
+                    <h5>This tool only works with characters or texts. No other form of media should be included</h5>
 
-            <br>
+                    <br>
 
-            <!-- Loading File SECTION -->
-            <tr>
-                <td>Copy and Paste or Select a File to Load: (.txt files only) </td><br>
-                <td><input type="file" id="loadFile"></td> <br>
-                <td><button onclick="fileToTextarea()">Load Selected File</button>
-                    <td>
-            </tr>
+                    <!-- Loading File SECTION -->
+                    <tr>
+                        <td>Copy and Paste or Select a File to Load: (.txt files only) </td><br>
+                        <td><input type="file" id="loadFile"></td> <br>
+                        <td><button onclick="fileToTextarea()">Load Selected File</button>
+                            <td>
+                    </tr>
 
-            <br>
+                    <br>
+                    <br>
 
-            <textarea id="txtHold" name="txtHold" class="no-resize" rows="13" cols="100"></textarea>
+                    <textarea id="txtHold" name="txtHold" class="no-resize form-control" rows="13" cols="100"></textarea>
 
-            <h7>Word Count</h7>
-            <textarea id="wordCount" name="wordCount" class="no-resize" rows="1" cols="10"></textarea>
+                    <br>
 
-            <!-- Summarisation SECTION -->
+                    <h7>Word Count</h7>
+                    <br>
+                    <textarea id="wordCount" name="wordCount" class="no-resize " rows="1" cols="10"></textarea>
 
-            <h3>Output</h3>
+                    <!-- Summarisation SECTION -->
+                </div>
+                <div class="fieldTwo">
+                    <h3>Output</h3>
 
-            <textarea id="txtDisplay" name="txtHold" class="no-resize" rows="13" cols="100" readonly></textarea>
+                    <textarea id="txtDisplay" name="txtHold" class="no-resize form-control" rows="13" cols="100" readonly></textarea>
 
+                </div>
+            </div>
         </div>
-    </div>
 
-</body>
+    </body>
 
-<br>
+    <br>
 
-<footer>
-    <div class="container">
-        <h3> Credit: </h3>
-        <p>
-            This tool is made to help others with writing and as such this tool is free to use. I give permission to developers to develop this tool to help others in their writing. I only ask that you credit this work of mine. e.g. [Summarisation tool made by Mohamed
-            Abanour, <a href="https://abanour.github.io/FinalYearProject/FinalYearProject.html">Link to original site</a>]
-        </p>
-    </div>
-</footer>
+    <hr>
+
+    <footer>
+        <div class="container">
+            <h3> Credit: </h3>
+            <p>
+                This tool is made to help others with writing and as such this tool is free to use. I give permission to developers to develop this tool to help others in their writing. I only ask that you credit this work of mine. e.g. [Summarisation tool made by Mohamed
+                Abanour, <a href="https://abanour.github.io/FinalYearProject/FinalYearProject.html">Link to original site</a>]
+            </p>
+        </div>
+    </footer>
+</div>
 
 </html>

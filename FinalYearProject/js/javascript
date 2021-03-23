@@ -18,4 +18,20 @@ function fileToTextarea() {
 
     // This specifies to read the .txt file as text and nothing else
     fileReader.readAsText(loadFile, "UTF-8");
+
+    document.getElementById('txtHold').addEventListener('input', function() {
+        var text = this.value,
+            count = text.trim().replace(/\s+/g, ' ').split(' ').length;
+        document.getElementById('wordCount').textContent = count;
+
+    });
+
 }
+
+
+document.getElementById('txtHold').addEventListener('input', function() {
+    var text = this.value,
+        count = text.trim().replace(/\s+/g, ' ').split(' ').length;
+    document.getElementById('wordCount').textContent = count;
+
+});
