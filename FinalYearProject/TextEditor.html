@@ -29,59 +29,18 @@
 
 <!-- Main body of code where all the features live -->
 
-<div class="mainBody">
+<div class="editorBody">
 
     <body>
         <div class="container h-100">
-            <div class="centre">
+            <!-- <div class="centre"> -->
 
-                <!-- Introduction to the website or tool -->
-                <div class="centreText">Summarisation Tool</div>
+            <a href="FinalYearProject.html">Back</a>
+            <textarea id="txtFree"></textarea>
 
-                <a href="TextEditor.html">Free Text Editor</a>
-
-                <div class="fieldOne">
-
-                    <h5>This tool only works with characters or texts. No other form of media should be included in your text document.</h5>
-
-                    <br>
-
-                    <!-- Loading File SECTION -->
-                    <tr>
-                        <td>Copy and Paste or Select a File to Load: (.txt files only) </td><br>
-                        <td><input type="file" id="loadFile"></td> <br>
-                        <td><button onclick="fileToTextarea()">Load Selected File</button>
-                            <td>
-                    </tr>
-
-                    <br>
-                    <br>
-
-                    <textarea id="txtHold" name="txtHold" spellcheck="true" autocomplete="on" autocapitalize="on" class="no-resize form-control" rows="13" cols="100"></textarea>
-
-                    <br>
-
-                    <h7>Word Count</h7>
-                    <br>
-
-                    <textarea id="wordCount" name="wordCount" class="no-resize " rows="1" cols="10"></textarea>
-
-
-                    <!-- Summarisation SECTION -->
-                </div>
-                <div class="fieldTwo">
-                    <h3>Output</h3>
-
-                    <textarea id="txtDisplay" name="txtDisplay" class="no-resize form-control" rows="13" cols="100" readonly></textarea>
-
-
-                </div>
-            </div>
+            <!-- </div> -->
         </div>
-
     </body>
-
-    <br>
 
     <hr>
 
@@ -99,6 +58,8 @@
 <script>
     tinymce.init({
         selector: '#txtFree',
+        min_width: 100,
+        min_height: 750,
         plugins: 'image export a11ychecker advcode casechange formatpainter linkchecker autolink lists checklist media mediaembed pageembed permanentpen powerpaste table advtable tinycomments tinymcespellchecker',
         toolbar: 'export a11ycheck addcomment showcomments casechange checklist code formatpainter pageembed permanentpen table',
         toolbar_mode: 'floating',
