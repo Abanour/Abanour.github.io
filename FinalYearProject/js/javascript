@@ -28,7 +28,6 @@ function fileToTextarea() {
 
 }
 
-
 document.getElementById('txtHold').addEventListener('input', function() {
     var text = this.value,
         count = text.trim().replace(/\s+/g, ' ').split(' ').length;
