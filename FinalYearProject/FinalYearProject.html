@@ -31,6 +31,28 @@
 
 <div class="mainBody">
 
+    <!-- test
+
+
+    <div>
+        <label for="input-file">Specify a text file:</label><br>
+        <input type="file" id="input-file">
+    </div>
+
+    <textarea id="content-target"></textarea>
+
+    <textarea id="event_content"></textarea>
+
+    <input type="hidden" name="" id="textbox" value="passed">
+
+    <input type='button' id='add' class="change" value='change all'>
+
+    <script src="script.js"></script>
+    <script src="dictionary.js"></script>
+
+
+    test -->
+
     <body>
         <div class="container h-100">
             <div class="centre">
@@ -58,7 +80,7 @@
                     <br>
 
                     <textarea id="txtHold" name="txtHold" spellcheck="true" autocomplete="on" autocapitalize="on" class="no-resize form-control" rows="13" cols="100"></textarea>
-
+                    <input type='button' id='add' class="change" value='change all'>
                     <br>
 
                     <h7>Word Count</h7>
@@ -68,28 +90,6 @@
 
                     <!-- Summarisation SECTION -->
                 </div>
-
-                <input type="file" name="inputfile" id="inputfile">
-                <script>
-                    $(function() {
-                        document.getElementById('inputfile').onchange = function() {
-                            debugger;
-                            var file = this.files[0];
-                            var reader = new FileReader();
-                            reader.onload = function(progressEvent) {
-                                // Entire file
-                                console.log(this.result);
-                                // By lines
-                                var lines = this.result.split('\n');
-                                var list = [];
-                                for (var line = 0; line < lines.length; line++) {
-                                    list.push(lines[line]);
-                                }
-                            };
-                            reader.readAsText(file);
-                        };
-                    });
-                </script>
 
                 <div class="fieldTwo">
                     <h3>Output</h3>

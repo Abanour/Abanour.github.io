@@ -28,9 +28,34 @@ function fileToTextarea() {
 
 }
 
-document.getElementById('txtHold').addEventListener('input', function() {
-    var text = this.value,
-        count = text.trim().replace(/\s+/g, ' ').split(' ').length;
-    document.getElementById('wordCount').textContent = count;
 
-});
+// document.getElementById('input-file')
+//     .addEventListener('change', getFile)
+
+// function getFile(event) {
+//     const input = event.target
+//     if ('files' in input && input.files.length > 0) {
+//         placeFileContent(
+//             document.getElementById('content-target'),
+//             input.files[0])
+//         placeFileContent(
+//             document.getElementById('event_content'),
+//             input.files[0])
+//     }
+
+// }
+
+// function placeFileContent(target, file) {
+//     readFileContent(file).then(content => {
+//         target.value = content
+//     }).catch(error => console.log(error))
+// }
+
+// function readFileContent(file) {
+//     const reader = new FileReader()
+//     return new Promise((resolve, reject) => {
+//         reader.onload = event => resolve(event.target.result)
+//         reader.onerror = error => reject(error)
+//         reader.readAsText(file)
+//     })
+// }
