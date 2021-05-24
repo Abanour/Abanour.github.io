@@ -30,15 +30,25 @@ function fileToTextarea() {
 
 }
 
+// This method exports the textarea as a text file
 function download() {
+
+    // Textarea to export frmom
     var text = document.getElementById("txtDisplay").value;
-    text = text.replace(/\n/g, "\r\n"); // To retain the Line breaks.
+
+    // Keeps the line breaks to not make a single long line.
+    text = text.replace(/\n/g, "\r\n");
+
+    // Custom settings to plain and filename set.
     var blob = new Blob([text], { type: "text/plain" });
     var anchor = document.createElement("a");
     anchor.download = "download.txt";
     anchor.href = window.URL.createObjectURL(blob);
     anchor.target = "_blank";
-    anchor.style.display = "none"; // just to be safe!
+    anchor.style.display = "none";
+
+    // Appends the the text to file and deletes the anchor link
+    // in case there is a change.
     document.body.appendChild(anchor);
     anchor.click();
     document.body.removeChild(anchor);
