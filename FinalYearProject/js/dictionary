@@ -9,7 +9,7 @@ function change() {
     // At this moment, the dictionary only has a few records.
     var str = document.getElementById("txtHold").value;
 
-    var res = str.replace(word[0], changeTo[0]);
+    var res = str.replaceAll(word[count], changeTo[count]);
 
     document.getElementById("txtDisplay").value = res;
 
