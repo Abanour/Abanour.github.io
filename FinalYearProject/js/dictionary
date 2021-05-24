@@ -1,36 +1,19 @@
-// Method is executed when the change button is clicked
-$(".change").click(function() {
-    var dictionary = {
-        "sample": "Word changed",
-        "On the other hand, However": "For the time being, for now",
-        ",": ", "
-    };
+var word = ["On the other hand", "For the time being"]
+var changeTo = ["however", "for now"];
 
+word.forEach(change);
+
+// Method is executed when the change button is clicked
+function change() {
     // References the dictionary to make the swaps available
     // At this moment, the dictionary only has a few records.
-    $(".txtDisplay").each(function() {
-        for (var ptrn in dictionary) {
-            $(this).val($(this).val().replace(new RegExp(ptrn, "g"), dictionary[ptrn]));
-        }
-    });
-    alert("done");
+    var str = document.getElementById("txtHold").value;
 
+    var res = str.replace(word[0], changeTo[0]);
 
-});
+    document.getElementById("txtDisplay").value = res;
 
-document.getElementById('txtHold')
-    .addEventListener('change', getFile)
-
-function getFile(event) {
-    const input = event.target
-    if ('files' in input && input.files.length > 0) {
-        placeFileContent(
-            document.getElementById('content-target'),
-            input.files[0])
-        placeFileContent(
-            document.getElementById('event_content'),
-            input.files[0])
-
-    }
-
+    // New word counter after the word has been replaced.
+    var counter = res.split(" ");
+    $("#newWordCount").text(counter.length);
 }

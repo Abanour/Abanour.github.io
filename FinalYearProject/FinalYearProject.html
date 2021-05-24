@@ -24,34 +24,13 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <script src="https://cdn.tiny.cloud/1/pjvfg3eu9f88z6iqa2kflein28xqm5qv7t1rljc3vg9i07gr/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
     <script src="js/javascript"></script>
+    <script src="js/dictionary"></script>
 
 </head>
 
 <!-- Main body of code where all the features live -->
 
 <div class="mainBody">
-
-    <!-- test
-
-
-    <div>
-        <label for="input-file">Specify a text file:</label><br>
-        <input type="file" id="input-file">
-    </div>
-
-    <textarea id="content-target"></textarea>
-
-    <textarea id="event_content"></textarea>
-
-    <input type="hidden" name="" id="textbox" value="passed">
-
-    <input type='button' id='add' class="change" value='change all'>
-
-    <script src="script.js"></script>
-    <script src="dictionary.js"></script>
-
-
-    test -->
 
     <body>
         <div class="container h-100">
@@ -80,14 +59,20 @@
                     <br>
 
                     <textarea id="txtHold" name="txtHold" spellcheck="true" autocomplete="on" autocapitalize="on" class="no-resize form-control" rows="13" cols="100"></textarea>
-                    <input type='button' id='add' class="change" value='change all'>
+                    <input type="hidden" name="" id="textbox" value="passed">
+                    <!-- <input type="button" onclick="myFunction()" value="change all"> -->
+                    <button onclick="change()">Change</button>
                     <br>
-
-                    <h7>Word Count</h7>
+                    <hr>
+                    <h7>Original Word Count</h7>
+                    ||
+                    <h7>New Word Count</h7>
                     <br>
 
                     <textarea id="wordCount" name="wordCount" class="no-resize " rows="1" cols="10"></textarea>
+                    <textarea id="newWordCount" name="newWordCount" class="no-resize " rows="1" cols="10"></textarea>
 
+                    <hr>
                     <!-- Summarisation SECTION -->
                 </div>
 
@@ -95,7 +80,7 @@
                     <h3>Output</h3>
 
                     <textarea id="txtDisplay" name="txtDisplay" class="no-resize form-control" rows="13" cols="100" readonly></textarea>
-
+                    <button type="button" onclick="saveTextAsFile()" value="save"> Save</button>
 
                 </div>
 
