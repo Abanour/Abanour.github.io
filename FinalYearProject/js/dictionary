@@ -1,16 +1,15 @@
 var word = ["On the other hand", "For the time being"]
 var changeTo = ["however", "for now"];
 
-word.forEach(change);
-
 // Method is executed when the change button is clicked
 function change() {
     // References the dictionary to make the swaps available
     // At this moment, the dictionary only has a few records.
     var str = document.getElementById("txtHold").value;
 
-    var res = str.replaceAll(word[count], changeTo[count]);
+    var res = str.replaceAll(word[0], changeTo[0]);
 
+    // document.getElementById("txtDisplay").value = res;
     document.getElementById("txtDisplay").value = res;
 
     // New word counter after the word has been replaced.
