@@ -50,7 +50,9 @@
                     <!-- Loading File SECTION -->
                     <tr>
                         <td>Copy and Paste or Select a File to Load: (.txt files only) </td><br>
+                        <!-- Button to open a file explorer to choose the file -->
                         <td><input type="file" id="loadFile"></td> <br>
+                        <!-- This button loads the content of the file into the text area -->
                         <td><button onclick="fileToTextarea()">Load Selected File</button>
                             <td>
                     </tr>
@@ -58,9 +60,9 @@
                     <br>
                     <br>
 
+                    <!-- The textarea has some features included like spellchecks etc. -->
                     <textarea id="txtHold" name="txtHold" spellcheck="true" autocomplete="on" autocapitalize="on" class="no-resize form-control" rows="13" cols="100"></textarea>
-                    <input type="hidden" name="" id="textbox" value="passed">
-                    <!-- <input type="button" onclick="myFunction()" value="change all"> -->
+                    <!-- Button to initiate the change -->
                     <button onclick="change()">Change</button>
                     <br>
                     <hr>
@@ -79,7 +81,10 @@
                 <div class="fieldTwo">
                     <h3>Output</h3>
 
+                    <!-- The output textarea which displays the processed version of the file. -->
                     <textarea id="txtDisplay" name="txtDisplay" class="no-resize form-control" rows="13" cols="100" readonly></textarea>
+
+                    <!-- The button allows the user to download the file as a txt file -->
                     <button type="button" onclick="download()" value="save"> Save</button>
 
 
